@@ -7,5 +7,6 @@ namespace OnlineVoting_API.Controllers
     [ApiController]
     public class PollsController : ControllerBase
     {
+
     }
 }

@@ -52,7 +52,7 @@ namespace OnlineVoting_API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AuditLogs");
+                    b.ToTable("AuditLogs", (string)null);
                 });
 
             modelBuilder.Entity("OnlineVoting_API.Models.Poll", b =>
@@ -90,7 +90,7 @@ namespace OnlineVoting_API.Migrations
 
                     b.HasIndex("CreatedById");
 
-                    b.ToTable("Polls");
+                    b.ToTable("Polls", (string)null);
                 });
 
             modelBuilder.Entity("OnlineVoting_API.Models.PollOption", b =>
@@ -115,7 +115,7 @@ namespace OnlineVoting_API.Migrations
 
                     b.HasIndex("PollId");
 
-                    b.ToTable("PollOptions");
+                    b.ToTable("PollOptions", (string)null);
                 });
 
             modelBuilder.Entity("OnlineVoting_API.Models.User", b =>
@@ -146,7 +146,7 @@ namespace OnlineVoting_API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("OnlineVoting_API.Models.Vote", b =>
@@ -178,7 +178,7 @@ namespace OnlineVoting_API.Migrations
                     b.HasIndex("UserId", "PollId")
                         .IsUnique();
 
-                    b.ToTable("Votes");
+                    b.ToTable("Votes", (string)null);
                 });
 
             modelBuilder.Entity("OnlineVoting_API.Models.Poll", b =>
